@@ -38,7 +38,7 @@ const numberCards = [
   { value: "15,000+", label: "Families accessing clean cooking energy" },
   { value: "4,000+", label: "Small businesses supported" },
   { value: "250+", label: "Tons of plastic waste recycled monthly" },
-  { value: "12,164+", label: "Tons of CO₂ emissions avoided" },
+  { value: "8750", label: "Tons of CO₂ Stopped Annually" },
 ];
 
 function BulletList({ items, className }: { items: string[]; className?: string }) {

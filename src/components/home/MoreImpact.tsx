@@ -66,8 +66,8 @@ const moreImpactStills = [
     src: "/images/fwdpitchdeckredesigning/IMG-20241115-WA0011.jpg.jpeg",
   },
   {
-    value: "2.4M",
-    label: "Tons CO₂ offset",
+    value: "4,000+",
+    label: "Small businesses supported",
     src: offset24tImage,
   },
   {
