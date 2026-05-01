@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #fbfcfb;
+    --foreground: #246102;
+    --brand: #246102;
+  }
+
+  body {
+    @apply min-h-screen antialiased;
+    background-color: var(--background);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .shadow-mint-soft {
+    box-shadow:
+      0 4px 28px -6px rgba(49, 230, 31, 0.12),
+      0 2px 12px -4px rgba(36, 97, 2, 0.08);
+  }
+
+  .footer-map-embed {
+    filter: grayscale(0.75) sepia(0.35) hue-rotate(58deg) saturate(0.5)
+      brightness(0.9);
+  }
+}
