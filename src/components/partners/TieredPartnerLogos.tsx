@@ -9,10 +9,12 @@ function LogoTile({
   abbr,
   name,
   tier,
+  logoSrc,
 }: {
   abbr: string;
   name: string;
   tier: Tier;
+  logoSrc?: string;
 }) {
   const size =
     tier === "government"
@@ -30,44 +32,85 @@ function LogoTile({
     <div
       className={`group flex w-full items-center justify-center rounded-2xl border border-neutral-200/90 bg-white shadow-sm transition duration-300 hover:scale-110 hover:border-[#52B788]/40 hover:shadow-md ${size}`}
     >
-      <div className="text-center grayscale transition duration-300 group-hover:grayscale-0">
-        <p
-          className={`font-bold uppercase tracking-wider text-[#1B4332]/70 transition group-hover:text-[#1B4332] ${textAbbr}`}
-        >
-          {abbr}
-        </p>
-        <p
-          className={`mt-1 line-clamp-2 font-medium leading-snug text-neutral-500 transition group-hover:text-[#1B4332]/90 ${textName}`}
-        >
-          {name}
-        </p>
-      </div>
+      {logoSrc ? (
+        <img
+          src={logoSrc}
+          alt={name}
+          className="h-[78px] w-[92%] object-contain sm:h-[86px]"
+          loading="lazy"
+        />
+      ) : (
+        <div className="text-center grayscale transition duration-300 group-hover:grayscale-0">
+          <p
+            className={`font-bold uppercase tracking-wider text-[#1B4332]/70 transition group-hover:text-[#1B4332] ${textAbbr}`}
+          >
+            {abbr}
+          </p>
+          <p
+            className={`mt-1 line-clamp-2 font-medium leading-snug text-neutral-500 transition group-hover:text-[#1B4332]/90 ${textName}`}
+          >
+            {name}
+          </p>
+        </div>
+      )}
     </div>
   );
 }
 
 const government = [
-  { abbr: "MoE", name: "Ministry of Energy & Petroleum" },
-  { abbr: "NEMA", name: "National Environment Management Authority" },
-  { abbr: "ERC", name: "Energy & Petroleum Regulatory Authority" },
-  { abbr: "KeNHA", name: "Kenya National Highways Authority" },
+  { abbr: "EPRA", name: "EPRA", logoSrc: "/images/epra.png" },
+  { abbr: "KEBS", name: "KEBS", logoSrc: "/images/kebs.png" },
+  { abbr: "NEMA", name: "NEMA", logoSrc: "/images/nema.png" },
+  { abbr: "GAVA", name: "GAVA", logoSrc: "/images/gava-1.jpg.jpeg" },
+  { abbr: "CG", name: "County Govts", logoSrc: "/images/county-govts.jpg.jpeg" },
+  { abbr: "INDA", name: "INDA", logoSrc: "/images/inda-1.jpg.jpeg" },
+  { abbr: "KEPRO", name: "KEPRO", logoSrc: "/images/kepro.png" },
 ];
 
 const impact = [
-  { abbr: "UNDP", name: "United Nations Development Programme" },
-  { abbr: "CCA", name: "Clean Cooking Alliance" },
-  { abbr: "WWF", name: "World Wide Fund for Nature" },
-  { abbr: "GEF", name: "Global Environment Facility" },
-  { abbr: "KRC", name: "Kenya Red Cross Society" },
+  { abbr: "CAN", name: "Government of Canada", logoSrc: "/images/govt-of-canada.png" },
+  { abbr: "HAL", name: "Halcyon", logoSrc: "/images/halcyon-logo.png" },
+  { abbr: "COR", name: "Cornel", logoSrc: "/images/cornel-logo.png" },
+  { abbr: "CCAK", name: "Clean Cooking Association of Kenya", logoSrc: "/images/ccak-logo.png" },
+  { abbr: "CW", name: "Challenge Works", logoSrc: "/images/challenge-works-logo.png" },
+  { abbr: "ASME", name: "ASME", logoSrc: "/images/asme-logo.png" },
+  { abbr: "RAENG", name: "RAENG", logoSrc: "/images/raeng-logo.jpg.jpeg" },
+  { abbr: "EG", name: "Echoing Green", logoSrc: "/images/echoing-green-logo.png" },
+  { abbr: "ECDF", name: "ECDF-Arb", logoSrc: "/images/ecdf-arb-logo-final-02.jpg.jpeg" },
+  { abbr: "GC", name: "Global Citizen", logoSrc: "/images/global-citizen-logo.jpg.jpeg" },
+  { abbr: "KCIC", name: "KCIC", logoSrc: "/images/kcic-logo.jpg.jpeg" },
+  { abbr: "IKEA", name: "IKEA", logoSrc: "/images/ikea-logo.png" },
+  { abbr: "WFP", name: "WFP", logoSrc: "/images/wfp-logo.png" },
+  { abbr: "KCDF", name: "KCDF", logoSrc: "/images/kcdf.png" },
+  { abbr: "COMESA", name: "COMESA", logoSrc: "/images/comesa-logo.jpg.jpeg" },
+  { abbr: "BFA", name: "BFA", logoSrc: "/images/bfa-logo.png" },
+  { abbr: "SHELL", name: "Shell Foundation", logoSrc: "/images/shell-foundation.jpg.jpeg" },
+  { abbr: "DOW", name: "DOW", logoSrc: "/images/dow.png" },
+  { abbr: "USAID", name: "USAID", logoSrc: "/images/usaid-logo.png" },
+  { abbr: "AP", name: "Afri Plastics", logoSrc: "/images/afri-plastics-logo.jpg.jpeg" },
+  { abbr: "NDF", name: "Nordic Dev Fund", logoSrc: "/images/nordic-dev-fund.png" },
+  { abbr: "P4G", name: "P4G", logoSrc: "/images/p4g-logo.png" },
+  { abbr: "WRI", name: "WRI", logoSrc: "/images/wri-logo.png" },
+  { abbr: "KU", name: "KU", logoSrc: "/images/ku.jpg.jpeg" },
+  { abbr: "JICA", name: "JICA", logoSrc: "/images/jica.png" },
+  { abbr: "CLA", name: "Climate LaunchAPD", logoSrc: "/images/climate-launchapd.png" },
+  { abbr: "KIC", name: "Climate KIC", logoSrc: "/images/climate-kic.png" },
+  { abbr: "SUE", name: "Start Up Energy", logoSrc: "/images/start-up-energy.png" },
+  { abbr: "KEN", name: "Kenia", logoSrc: "/images/kenia.jpg.jpeg" },
+  { abbr: "NF", name: "Newton Fund", logoSrc: "/images/newton-fund.png" },
+  { abbr: "BC", name: "Bristish Council", logoSrc: "/images/bristish-council.jpg.jpeg" },
 ];
 
 const corporate = [
-  { abbr: "ASL", name: "Allied Logistics" },
-  { abbr: "RCL", name: "Retail Chain Partners" },
-  { abbr: "TDL", name: "Thika Distribution Hub" },
-  { abbr: "KPA", name: "Kenya Ports Agency Liaison" },
-  { abbr: "SGR", name: "Freight Corridor Partners" },
-  { abbr: "LPG", name: "Cylinder Exchange Network" },
+  { abbr: "MAZI", name: "Mazi Mobility", logoSrc: "/images/mazi-mobility.png" },
+  { abbr: "APE", name: "Apenia", logoSrc: "/images/apenia.png" },
+  { abbr: "MPESA", name: "MPESA", logoSrc: "/images/mpesa.png" },
+  { abbr: "SF", name: "Solar Freeze", logoSrc: "/images/solar-freeze.png" },
+  { abbr: "FLEX", name: "Flexpay", logoSrc: "/images/flexpay.png" },
+  { abbr: "FEION", name: "Feion", logoSrc: "/images/feion.png" },
+  { abbr: "SAF", name: "Safaricom", logoSrc: "/images/safaricom.png" },
+  { abbr: "LLOYD", name: "Lloyd Constellations", logoSrc: "/images/lloyd-constellations.jpg.jpeg" },
+  { abbr: "VERST", name: "Verst Carbon", logoSrc: "/images/verst-carbon.png" },
 ];
 
 function TierSection({
@@ -81,7 +124,7 @@ function TierSection({
   title: string;
   subtitle: string;
   icon: typeof ShieldCheck;
-  items: { abbr: string; name: string }[];
+  items: { abbr: string; name: string; logoSrc?: string }[];
   tier: Tier;
   columns: string;
 }) {
@@ -111,7 +154,7 @@ function TierSection({
       <ul className={`grid gap-4 sm:gap-5 ${columns}`}>
         {items.map((item) => (
           <li key={item.abbr}>
-            <LogoTile abbr={item.abbr} name={item.name} tier={tier} />
+            <LogoTile abbr={item.abbr} name={item.name} tier={tier} logoSrc={item.logoSrc} />
           </li>
         ))}
       </ul>
