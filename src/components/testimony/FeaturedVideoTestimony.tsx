@@ -69,7 +69,7 @@ export function FeaturedVideoTestimony() {
                   playsInline
                   preload="metadata"
                 >
-                  <source src="/images/NEWCOMMUNITYKITCHENLAUNCHKAYOLE.mp4" type="video/mp4" />
+                  <source src="/images/communityvid.mp4" type="video/mp4" />
                 </video>
                 <button
                   type="button"

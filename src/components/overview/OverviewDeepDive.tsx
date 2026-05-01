@@ -45,45 +45,34 @@ export function OverviewDeepDive() {
               Mega Gas starts where others see a problem—waste and energy poverty—and turns it into
               opportunity. We collect plastic and organic waste from communities and convert it into
               clean cooking gas through controlled, safe processing systems. This ensures reliable,
-              efficient energy ready for everyday use.
-            </p>
-            <p>
-              Instead of distributing gas through expensive cylinders, we bring energy directly to
-              people through{" "}
+              efficient energy ready for everyday use. Instead of distributing gas through expensive
+              cylinders, we bring energy directly to people through{" "}
               <strong className="font-bold text-neutral-900"> community kitchens</strong>,
               removing upfront costs and enabling access through
               a flexible PAYGO model.
             </p>
             <p>
-              We are deeply embedded within both households and the broader community. Our
-              kitchens serve not only as cooking spaces, but as centers of daily life—where families
-              gather, businesses operate, and social interactions happen. This is where our biggest
-              breakthrough lies.
-            </p>
-            <p>
-              Our model goes beyond energy delivery. It targets the{" "}
+              We are deeply embedded within both households and the broader community. Our kitchens
+              serve not only as cooking spaces, but as centers of daily life—where families gather,
+              businesses operate, and social interactions happen. This is where our biggest
+              breakthrough lies. Our model goes beyond energy delivery. It targets the{" "}
               <strong className="font-bold text-neutral-900">knowledge, attitudes, and practices</strong>{" "}
-              of our users and host communities. By demonstrating the value of plastic
-              waste as a clean energy resource, we shift perceptions around waste management and
-              environmental responsibility.
-            </p>
-            <p>
-              We combine{" "}
-              <strong className="font-bold text-neutral-900">hard infrastructure (clean energy systems)</strong>{" "}
+              of our users and host communities. By demonstrating the value of plastic waste as a
+              clean energy resource, we shift perceptions around waste management and environmental
+              responsibility. We combine{" "}
+              <strong className="font-bold text-neutral-900">
+                hard infrastructure (clean energy systems)
+              </strong>{" "}
               with{" "}
               <strong className="font-bold text-neutral-900">
                 soft infrastructure (awareness, behavior change, and community engagement)
               </strong>
               —ensuring that climate action becomes part of everyday conversations and decisions.
-            </p>
-            <p>
               Clean cooking becomes more than a service—it becomes{" "}
               <strong className="font-bold text-neutral-900">
-                a conversation starter, a learning platform, and a pathway to long-term behavior change
-              </strong>.
-            </p>
-            <p>
-              As more people adopt our solution, we are not only serving today&apos;s market—we are
+                a conversation starter, a learning platform, and a pathway to long-term behavior
+                change
+              </strong>. As more people adopt our solution, we are not only serving today&apos;s market—we are
               actively building the future market by creating informed, empowered communities that
               demand and sustain clean energy solutions.
             </p>
