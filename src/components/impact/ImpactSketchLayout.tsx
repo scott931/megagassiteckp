@@ -11,7 +11,7 @@ const socialBullets = [
 ];
 
 const economicBullets = [
-  "Cooking at just $0.02 per hour—affordable for low-income households",
+  "Cooking at just $0.2 per hour—affordable for low-income households",
   "4,000+ small businesses supported (vendors, caterers, schools)",
   "Hundreds of jobs created across waste collection, sorting, and kitchen operations",
   "Income generation opportunities for women and youth",

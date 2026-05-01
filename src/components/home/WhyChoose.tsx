@@ -32,7 +32,7 @@ const cards = [
     n: 5,
     icon: Users,
     title: "Ultra-Affordable Access",
-    text: "Clean cooking at just $0.02 per hour, with no upfront costs, making it accessible to low-income households.",
+    text: "Clean cooking at just $0.2 per hour, with no upfront costs, making it accessible to low-income households.",
   },
 ];
 

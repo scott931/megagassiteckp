@@ -12,7 +12,7 @@ const problemPoints = [
 
 const solutionPoints = [
   "No upfront cost for users",
-  "Pay-as-you-go at just $0.02 per hour",
+  "Pay-as-you-go at just $0.2 per hour",
   "Accessible via the Mega Gas Wallet (USSD)",
   "Reliable, safe, and scalable",
 ];

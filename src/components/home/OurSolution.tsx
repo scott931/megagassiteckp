@@ -36,7 +36,7 @@ export function OurSolution() {
             <p className="mt-4 leading-relaxed text-neutral-700">
               Our hybrid system integrates plastic-to-gas, biogas, and
               solar-powered cooking. Through our PAYGO model and Mega Gas Wallet
-              (USSD-based), users can pay as little as $0.02 per hour, making
+              (USSD-based), users can pay as little as $0.2 per hour, making
               clean cooking accessible to all.
             </p>
           </div>

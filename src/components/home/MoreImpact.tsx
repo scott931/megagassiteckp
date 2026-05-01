@@ -4,7 +4,7 @@ import Image from "next/image";
 import value1Image from "@/images/value1.jpeg";
 import value2Image from "@/images/value2.jpeg";
 import value3Image from "@/images/value3.jpeg";
-import value4Image from "@/images/value4.jpeg";
+import resilienceImage from "@/images/resilience.jpeg";
 import value5Image from "@/images/value5.jpeg";
 import served60kImage from "@/images/60kp.jpeg";
 import co2StoppedImage from "@/images/8750.jpeg";
@@ -35,7 +35,7 @@ const blocks = [
   {
     metric: "Resilience",
     label: "We adapt, innovate, and persist in solving complex energy and environmental challenges.",
-    src: value4Image,
+    src: resilienceImage,
   },
   {
     metric: "Compassion",
@@ -61,7 +61,7 @@ const moreImpactStills = [
     src: communities120Image,
   },
   {
-    value: "25000kgs of Gas",
+    value: "25,000 Kga of Gas",
     label: "Consumed Weekly",
     src: "/images/fwdpitchdeckredesigning/IMG-20241115-WA0011.jpg.jpeg",
   },
