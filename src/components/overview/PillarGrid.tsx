@@ -64,27 +64,6 @@ export function PillarGrid() {
   return (
     <section className="bg-white px-4 py-14 sm:px-6 sm:py-16 lg:px-8">
       <div className="mx-auto max-w-7xl">
-        <motion.section
-          initial={{ opacity: 0, y: 12 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mb-10 overflow-hidden rounded-3xl border border-emerald-500/10 bg-white shadow-sm"
-        >
-          <div className="relative h-[260px] bg-gradient-to-br from-[#1B4332]/10 to-[#1B4332]/5 sm:h-[340px] md:h-[380px]">
-            <video
-              className="h-full w-full object-cover"
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="auto"
-              aria-label="Community kitchen activity"
-            >
-              <source src="/images/communityvid.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </motion.section>
         <p className="mb-8 text-center text-sm font-semibold uppercase tracking-[0.2em] text-[#1B4332]/70">
           Our approach
         </p>

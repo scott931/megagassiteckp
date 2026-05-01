@@ -1,15 +1,20 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { Play } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
-const poster =
-  "/images/fwdpitchdeckredesigning/1000388829.jpg.jpeg";
+const VIDEO_SRC = "/images/communityvid.mp4";
 
 export function FeaturedVideoTestimony() {
   const [playing, setPlaying] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const v = videoRef.current;
+    if (!v) return;
+    void v.play().catch(() => {});
+  }, [playing]);
 
   return (
     <section className="bg-white px-4 pb-16 pt-4 sm:px-6 sm:pb-20 sm:pt-6 md:pb-24">
@@ -30,22 +35,29 @@ export function FeaturedVideoTestimony() {
           className="relative overflow-hidden rounded-3xl border-8 border-emerald-100/90 bg-softwhite shadow-2xl shadow-neutral-900/10"
         >
           <div className="relative aspect-video w-full bg-black">
-            {!playing ? (
+            <video
+              ref={videoRef}
+              className="h-full w-full object-cover"
+              autoPlay
+              playsInline
+              preload="auto"
+              muted={!playing}
+              loop={!playing}
+              controls={playing}
+              aria-label="Community kitchen activity"
+            >
+              <source src={VIDEO_SRC} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+            {!playing && (
               <>
-                <Image
-                  src={poster}
-                  alt="Community leader interview — Mega Gas"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 896px"
-                  priority
-                />
-                <div className="absolute inset-0 bg-black/25" />
+                <div className="pointer-events-none absolute inset-0 bg-black/25" />
                 <button
                   type="button"
                   onClick={() => setPlaying(true)}
                   className="group absolute inset-0 flex items-center justify-center"
-                  aria-label="Play featured testimony video"
+                  aria-label="Play featured testimony video with sound"
                 >
                   <span className="relative flex h-20 w-20 items-center justify-center rounded-full bg-white/95 text-[#1B4332] shadow-lg transition group-hover:scale-105 sm:h-24 sm:w-24">
                     <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white/40 opacity-30" />
@@ -53,32 +65,23 @@ export function FeaturedVideoTestimony() {
                     <Play className="relative ml-1 h-9 w-9 fill-current sm:h-10 sm:w-10" aria-hidden />
                   </span>
                 </button>
-                <p className="absolute bottom-4 left-4 right-4 text-center text-sm text-white/95 drop-shadow md:left-8 md:right-auto md:text-left">
+                <p className="pointer-events-none absolute bottom-4 left-4 right-4 text-center text-sm text-white/95 drop-shadow md:left-8 md:right-auto md:text-left">
                   <span className="font-semibold">Community voices</span>
                   <span className="mt-1 block text-white/80">
                     Hear how clean gas changed daily life for families in Nairobi.
                   </span>
                 </p>
               </>
-            ) : (
-              <div className="relative aspect-video w-full bg-black">
-                <video
-                  className="h-full w-full object-cover"
-                  controls
-                  autoPlay
-                  playsInline
-                  preload="metadata"
-                >
-                  <source src="/images/communityvid.mp4" type="video/mp4" />
-                </video>
-                <button
-                  type="button"
-                  onClick={() => setPlaying(false)}
-                  className="absolute right-4 top-4 rounded-full border border-white/65 bg-black/55 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-white transition hover:bg-black/70"
-                >
-                  Back
-                </button>
-              </div>
+            )}
+
+            {playing && (
+              <button
+                type="button"
+                onClick={() => setPlaying(false)}
+                className="absolute right-4 top-4 z-10 rounded-full border border-white/65 bg-black/55 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-white transition hover:bg-black/70"
+              >
+                Back
+              </button>
             )}
           </div>
         </motion.div>

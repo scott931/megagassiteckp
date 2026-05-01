@@ -67,7 +67,7 @@ export function TestimonyHero() {
         >
           <div className="flex flex-col items-stretch justify-center gap-6 sm:flex-row sm:items-start sm:gap-0 sm:divide-x sm:divide-emerald-100">
             <Metric
-              value={5000}
+              value={15000}
               suffix="+"
               label="Happy households"
               enabled={inView}
