@@ -56,7 +56,7 @@ export function OurStoryHero() {
                 harmful fuels that damaged their health, environment, and finances. I
                 knew there had to be a better way. That is how Mega Gas was born."
               </p>
-              <p className="font-semibold text-[#1B4332]">Peter Njeri C.E.O of Meg Gas</p>
+              <p className="font-semibold text-[#1B4332]">Peter Njeri, C.E.O of Meg Gas</p>
             </div>
           </motion.div>
         </div>
