@@ -43,7 +43,7 @@ export function OurStoryHero() {
             </h1>
             <div className="mt-8 space-y-5 text-lg leading-relaxed text-neutral-600">
               <p>
-                "Mega Gas began from lived experience. I grew up in Soweto, one of the
+                &ldquo;Mega Gas began from lived experience. I grew up in Soweto, one of the
                 largest informal settlements in Nairobi, in a family of nine children.
                 Every day, my siblings and I walked long distances to collect firewood.
                 When we returned home and cooking began, our house would fill with thick
@@ -54,7 +54,7 @@ export function OurStoryHero() {
                 This was not just my family&apos;s reality—it was the reality of our
                 entire community. Families were trapped in energy poverty, relying on
                 harmful fuels that damaged their health, environment, and finances. I
-                knew there had to be a better way. That is how Mega Gas was born."
+                knew there had to be a better way. That is how Mega Gas was born.&rdquo;
               </p>
               <p className="font-semibold text-[#1B4332]">Peter Njeri, C.E.O of Meg Gas</p>
             </div>
