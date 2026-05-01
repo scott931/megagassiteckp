@@ -110,15 +110,18 @@ export function ImpactSketchLayout() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="rounded-2xl border border-[#1B4332]/20 p-6 sm:p-8"
+            className="relative overflow-hidden rounded-2xl border border-[#1B4332]/20 bg-cover bg-center p-6 sm:p-8"
+            style={{ backgroundImage: "url('/images/enviromentalimpact.png')" }}
           >
-            <h2 className="text-2xl font-semibold text-[#1B4332] sm:text-3xl">
-              Environmental Impact
-            </h2>
-            <p className="mt-3 w-full max-w-none text-neutral-700">
-              We turn waste into energy and reduce climate harm at scale.
-            </p>
-            <BulletList items={environmentalBullets} />
+            <div className="relative">
+              <h2 className="text-2xl font-semibold text-white sm:text-3xl">
+                Environmental Impact
+              </h2>
+              <p className="mt-3 w-full max-w-none font-semibold text-white">
+                We turn waste into energy and reduce climate harm at scale.
+              </p>
+              <BulletList items={environmentalBullets} className="font-semibold text-white" />
+            </div>
           </motion.section>
 
           <motion.section
@@ -126,15 +129,18 @@ export function ImpactSketchLayout() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.12 }}
-            className="rounded-2xl border border-[#1B4332]/20 p-6 sm:p-8"
+            className="relative overflow-hidden rounded-2xl border border-[#1B4332]/20 bg-cover bg-center p-6 sm:p-8"
+            style={{ backgroundImage: "url('/images/systemcommunity.jpeg')" }}
           >
-            <h2 className="text-2xl font-semibold text-[#1B4332] sm:text-3xl">
-              Systems & Community Impact
-            </h2>
-            <p className="mt-3 w-full max-w-none text-neutral-700">
-              We go beyond energy—transforming behavior, systems, and access.
-            </p>
-            <BulletList items={systemsBullets} />
+            <div className="relative">
+              <h2 className="text-2xl font-semibold text-white sm:text-3xl">
+                Systems & Community Impact
+              </h2>
+              <p className="mt-3 w-full max-w-none font-semibold text-white">
+                We go beyond energy—transforming behavior, systems, and access.
+              </p>
+              <BulletList items={systemsBullets} className="font-semibold text-white" />
+            </div>
           </motion.section>
 
           <motion.section

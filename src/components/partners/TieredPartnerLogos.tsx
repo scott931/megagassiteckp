@@ -124,28 +124,28 @@ export function TieredPartnerLogos() {
     <section className="bg-white px-4 pb-24 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <TierSection
-          title="Government & Regulatory"
-          subtitle="Regulatory alignment and public-sector collaboration that keep standards high and communities protected."
-          icon={ShieldCheck}
-          tier="government"
-          items={government}
-          columns="grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"
-        />
-        <TierSection
-          title="Impact & NGO Partners"
-          subtitle="International NGOs and foundations that help us scale access where it matters most."
+          title="Supported by"
+          subtitle="Help us scale access where it matters most."
           icon={Globe}
           tier="impact"
           items={impact}
           columns="grid-cols-2 sm:grid-cols-3 lg:grid-cols-5"
         />
         <TierSection
-          title="Distribution & Corporate"
+          title="Delivery Partners"
           subtitle="Logistics, retail, and enterprise networks that move product safely and reliably."
           icon={Handshake}
           tier="corporate"
           items={corporate}
           columns="grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6"
+        />
+        <TierSection
+          title="Government & Regulatory"
+          subtitle="Regulatory alignment and public-sector collaboration that keep standards high and communities protected."
+          icon={ShieldCheck}
+          tier="government"
+          items={government}
+          columns="grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"
         />
       </div>
     </section>
