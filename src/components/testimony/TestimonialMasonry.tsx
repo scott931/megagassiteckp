@@ -20,8 +20,7 @@ const cards: Card[] = [
       "We finally breathe easier in the kitchen. Mega Gas is consistent, and the team explains every safety check—no guesswork.",
     name: "Jane D.",
     location: "Ruiru",
-    avatar:
-      "/images/fwdpitchdeckredesigning/1000388888.jpg.jpeg",
+    avatar: "/images/p1.jpeg",
     badge: "verified",
   },
   {
@@ -29,8 +28,7 @@ const cards: Card[] = [
       "Our hotel switched bulk cooking to Mega Gas. Costs stabilized and guests notice the cleaner air in our back-of-house.",
     name: "Peter Mwangi",
     location: "Westlands, Nairobi",
-    avatar:
-      "/images/fwdpitchdeckredesigning/1000388936.jpg.jpeg",
+    avatar: "/images/p2.jpeg",
     badge: "carbon",
     featured: true,
   },
@@ -39,8 +37,7 @@ const cards: Card[] = [
       "Reliable delivery and fair pricing. I recommend Mega Gas to every mama in my chama.",
     name: "Lucy Achieng",
     location: "Kasarani",
-    avatar:
-      "/images/fwdpitchdeckredesigning/1000388967.jpg.jpeg",
+    avatar: "/images/p3.jpeg",
     badge: "verified",
   },
   {
@@ -48,8 +45,7 @@ const cards: Card[] = [
       "As an NGO partner, we needed traceable impact. Mega Gas gave us data we could stand behind in our donor reports.",
     name: "Dr. Samira K.",
     location: "Program director",
-    avatar:
-      "/images/fwdpitchdeckredesigning/1000388977.jpg.jpeg",
+    avatar: "/images/p4.jpeg",
     badge: "carbon",
   },
   {
@@ -57,8 +53,7 @@ const cards: Card[] = [
       "The blue flame burns clean. My children’s coughs from smoke are gone—that alone was worth the switch.",
     name: "David O.",
     location: "Thika",
-    avatar:
-      "/images/fwdpitchdeckredesigning/1_1772050520_1000338869.jpg",
+    avatar: "/images/p5.jpeg",
     badge: "verified",
   },
   {
@@ -66,8 +61,7 @@ const cards: Card[] = [
       "Corporate kitchens run on precision. Mega Gas met our safety audits and never missed a refill window.",
     name: "Grace W.",
     location: "Industrial Area",
-    avatar:
-      "/images/fwdpitchdeckredesigning/IMG-20241114-WA0070.jpg.jpeg",
+    avatar: "/images/p6.jpeg",
     badge: "verified",
   },
   {
@@ -75,8 +69,7 @@ const cards: Card[] = [
       "I was skeptical until month one—our charcoal spend dropped sharply. Wish we had switched sooner.",
     name: "James K.",
     location: "Kiambu",
-    avatar:
-      "/images/fwdpitchdeckredesigning/IMG-20241114-WA0072.jpg.jpeg",
+    avatar: "/images/p7.jpeg",
     badge: "carbon",
   },
   {
@@ -84,8 +77,31 @@ const cards: Card[] = [
       "Clean energy should not be a luxury. Mega Gas made it reachable for our church kitchen and school lunch program.",
     name: "Rev. Mutua",
     location: "Machakos",
-    avatar:
-      "/images/fwdpitchdeckredesigning/IMG-20241115-WA0002.jpg.jpeg",
+    avatar: "/images/p8.jpeg",
+    badge: "verified",
+  },
+  {
+    quote:
+      "Our women-led kitchen now serves more meals with lower fuel spend, and we no longer worry about smoky cooking spaces.",
+    name: "Mary N.",
+    location: "Embakasi",
+    avatar: "/images/p9.jpeg",
+    badge: "verified",
+  },
+  {
+    quote:
+      "Mega Gas helped us run cleaner operations day and night. The reliability has improved planning across our whole team.",
+    name: "Josephine M.",
+    location: "Nairobi CBD",
+    avatar: "/images/p10.jpeg",
+    badge: "carbon",
+  },
+  {
+    quote:
+      "Cooking is faster, cleaner, and safer now. I trust the system and recommend Mega Gas to every nearby household.",
+    name: "Rosalia",
+    location: "Nairobi",
+    avatar: "/images/rosalia.jpeg",
     badge: "verified",
   },
 ];
